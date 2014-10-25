@@ -1,0 +1,5 @@
+There are three implementations in the repository, actually: 
+A wormhole router (whr_top), a canonical VC router (similar to what the Dally/Towles book describes; vcr_top) and 
+a router with combined VC and switch allocation (rtr_top). 
+You can either instantiate them directly, or pass the appropriate "router_type" parameter to router_wrap to select one of them.
+ (Also, note that all three use lookahead routing instead of a dedicated routing stage.)
